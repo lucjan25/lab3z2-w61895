@@ -1,0 +1,31 @@
+﻿<Window x:Class="Lab3z2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab3z2"
+        mc:Ignorable="d"
+        Title="l3z2 w61895" Height="269" Width="371" ResizeMode="CanMinimize">
+    <Grid>
+        <ListBox x:Name="lbSubstance" HorizontalAlignment="Left" Height="174" Margin="10,50,0,0" VerticalAlignment="Top" Width="169">
+            <ListBoxItem>Chrom</ListBoxItem>
+            <ListBoxItem>Magnez</ListBoxItem>
+            <ListBoxItem>Siarka</ListBoxItem>
+            <ListBoxItem>Wolfram</ListBoxItem>
+            <ListBoxItem>Złoto</ListBoxItem>
+        </ListBox>
+        <Label Content="Substancja" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnExec" Content="Wykonaj" HorizontalAlignment="Left" Margin="185,149,0,0" VerticalAlignment="Top" Height="30" Width="69" Click="btnExec_Click"/>
+        <Label x:Name="lblWynik" Content="Gęstość:" HorizontalAlignment="Left" Margin="185,179,0,0" VerticalAlignment="Top" Width="67" Height="27"/>
+        <Button x:Name="btnExit" Content="Wyjdź" HorizontalAlignment="Left" Margin="276,149,0,0" VerticalAlignment="Top" Height="30" Width="50" Click="btnExit_Click"/>
+        <GroupBox Header="Jednostka" HorizontalAlignment="Left" Height="68" Margin="185,50,0,0" VerticalAlignment="Top" Width="97">
+            <StackPanel Margin="0,0,0,0">
+                <RadioButton x:Name="rdKg" Content="kg/m^3" HorizontalAlignment="Left" Margin="0,0,0,0" Height="24" IsChecked="True"/>
+                <RadioButton x:Name="rdG" Content="g/cm^3" HorizontalAlignment="Left" Margin="0,0,0,0" Height="24"/>
+            </StackPanel>
+        </GroupBox>
+        <CheckBox x:Name="cbSave" Content="Nadpisz wartość domyślną" HorizontalAlignment="Left" Margin="185,123,0,0" VerticalAlignment="Top" Checked="cbSave_Checked" Unchecked="cbSave_Unchecked"/>
+        <TextBox x:Name="tbDensity" HorizontalAlignment="Left" Margin="185,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" IsReadOnly="True"/>
+
+    </Grid>
+</Window>
